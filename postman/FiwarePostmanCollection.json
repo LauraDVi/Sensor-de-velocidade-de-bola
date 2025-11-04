@@ -1,0 +1,36 @@
+{
+  "info": {
+    "name": "FIWARE Ball Speed",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Provision Device",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:4041/iot/devices",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "4041",
+          "path": [
+            "iot",
+            "devices"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"devices\": [\n    {\n      \"device_id\": \"ball_sensor_01\",\n      \"entity_name\": \"urn:ngsi-ld:BallSensor:ball_sensor_01\",\n      \"entity_type\": \"BallSensor\",\n      \"protocol\": \"MQTT\",\n      \"transport\": \"MQTT\",\n      \"attributes\": [\n        {\n          \"object_id\": \"speed_kmh\",\n          \"name\": \"speed\",\n          \"type\": \"Number\"\n        }\n      ]\n    }\n  ]\n}"
+        }
+      }
+    }
+  ]
+}
