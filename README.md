@@ -73,4 +73,9 @@ Se tudo funcionar, teremos o seguinte resultado no Orion:
 }
 ```
 
+### 6. Equipe
+Raphael Aaron - 564067;
+Felipe Catto - 562106;
+Kimberly Kristina - 564080;
+Laura Dantas - 564064.
 
