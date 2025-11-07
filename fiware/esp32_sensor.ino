@@ -4,16 +4,16 @@
 #include <PubSubClient.h>
 
 // Configuração
-const char* ssid = "YOUR_SSID";
-const char* password = "YOUR_PASS";
-const char* mqtt_server = "BROKER_IP"; // ex: 192.168.1.100 (container Docker)
+const char* ssid = "SEU_SSID";
+const char* password = "SUA_SENHA";
+const char* mqtt_server = "BROKER_IP"; // (container Docker)
 const int mqtt_port = 1883;
 const char* deviceId = "ball_sensor_01";
 const float distance_m = 1.0; // distância entre sensores em metros
 
 // Pinos dos sensores
-const int pinSensor1 = 14; // primeiro sensor (entrada)
-const int pinSensor2 = 27; // segundo sensor (saída)
+const int pinSensor1 = 14; // primeiro sensor
+const int pinSensor2 = 27; // segundo sensor
 
 WiFiClient espClient;
 PubSubClient client(espClient);
