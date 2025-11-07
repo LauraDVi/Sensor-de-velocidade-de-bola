@@ -72,6 +72,23 @@ Se tudo funcionar, teremos o seguinte resultado no Orion:
 }
 }
 ```
+---
+## Teste wokwi
+Caso não tenha os materiais necessário, é possível verificar a funcionalidade desse projeto utilizando o wokwi, esse que oferece IR receiver, o qual trata-se de um dispositivo diferente daquele apresentado neste projeto, mas que traz resoltados semelhantes e é ótimo para verificar se a implementação funciona. Segue o diagrama:
+<img width="478" height="447" alt="image" src="https://github.com/user-attachments/assets/aadacfce-f9c7-4feb-80bb-f4c28c14ff5e" />
+
+Para realizar o teste sem o uso dos softwares aqui apresentados, mude as configurações do código esp32 (já mencionado e disponibilizado nesse repositório) para:
+```
+const char* ssid = "Wokwi-GUEST";
+const char* password = "";
+const char* mqtt_server = "test.mosquitto.org"; // (container Docker)
+const int mqtt_port = 1883;
+const char* deviceId = "ball_sensor_01";
+const float distance_m = 1.0; // distância entre sensores em metros
+```
+
+Segue o vídeo do hands-on dessa solução:
+https://youtu.be/6bc-2mrQBro?si=5WRSFUv1csO4RLw1
 
 ### 6. Equipe
 Raphael Aaron - 564067;
