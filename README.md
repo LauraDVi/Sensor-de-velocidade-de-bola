@@ -2,6 +2,8 @@
 
 > O documento a seguir trata-se de um guia completo para replicar e entender o projeto IoT que mede velocidade de uma bola de treino de futebol, utilizando um ESP32, sensores físicos e trasmissão de dados via MQTT para o Fiware
 
+> Disponibilização do repositório do professor Cabrini caso você queira explorar os componentes do Fiware descomplicado e implementá-lo no seu dispositivo: https://github.com/fabiocabrini/fiware?tab=readme-ov-file
+
 ## Problema e proposta
   Em cenários atuais, os treinos de futebol, tanto técnicos quanto preparatórios, precisam medir a intensidade de chutes e passes. Os sistemas profissionais, em sua maioria, são caros, fechados e não integráveis.
   
